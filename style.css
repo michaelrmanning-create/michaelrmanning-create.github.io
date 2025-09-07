@@ -1,29 +1,4 @@
-/* Reset some default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background-color: #111;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
+/* Existing nav styles */
 nav ul {
   list-style: none;
   display: flex;
@@ -31,6 +6,7 @@ nav ul {
   gap: 30px;
 }
 
+/* Default links */
 nav a {
   color: #fff;
   text-decoration: none;
@@ -38,67 +14,12 @@ nav a {
   transition: color 0.3s;
 }
 
+/* Hover effect */
 nav a:hover {
   color: #0070f3;
 }
 
-/* Hero Section */
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-button {
-  padding: 12px 30px;
-  font-size: 16px;
-  background-color: #0070f3;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #005bb5;
-}
-
-/* Features Section */
-.features {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px 20px;
-}
-
-.feature-card {
-  background-color: #111;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.feature-card:hover {
-  transform: translateY(-10px);
-}
-
-/* Footer */
-footer {
-  background-color: #111;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
+/* Make first link bigger */
+nav a.main-link {
+  font-size: 1.5rem; /* Larger size */
 }
