@@ -1,27 +1,68 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
-  background: #000; /* Black background */
-  color: #fff; /* White text */
 }
 
-header {
-  background: #111; /* Dark gray for contrast */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
   color: #fff;
-  padding: 20px;
+  line-height: 1.6;
 }
 
-main {
-  margin: 50px 0;
+/* Header */
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0070f3;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 30px;
   font-size: 16px;
-  background: #0070f3; /* Bright blue button */
-  color: white;
+  background-color: #0070f3;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -29,12 +70,35 @@ button {
 }
 
 button:hover {
-  background: #005bb5; /* Darker blue on hover */
+  background-color: #005bb5;
 }
 
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.feature-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
 footer {
-  margin-top: 50px;
-  padding: 10px;
-  background: #111;
-  color: #fff;
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
